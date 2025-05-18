@@ -30,7 +30,7 @@ The website is live at [https://shineportfolio.unaux.com](http://shineportfolio.
 Feel free to reach out to me at:
 - Email: [shineleo19@example.com]
 - LinkedIn: [https://www.linkedin.com/in/shine-leo-854a83326]
-- Personal Website: [your-website-url.com](http://shineportfolio.unaux.com)
+- Personal Website: [shineportfolio.unaux.com](http://shineportfolio.unaux.com)
 
 ---
 
