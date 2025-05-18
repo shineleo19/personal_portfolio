@@ -16,11 +16,22 @@ This portfolio website serves as a digital resume and project showcase, built wi
 
 ## 🛠️ Technologies Used
 
-- Frontend: [List your frontend technologies]
-- Backend: [List your backend technologies, if applicable]
-- Deployment: [How you deployed the site]
-- Additional Libraries: [Any notable libraries or frameworks]
+- Frontend: HTML, CSS, JAVASCRIPT
+- Backend:no backend‼️
+- Deployment: I deployed my site using profreehost site. It a free site run your website
+- Additional Libraries: no framworks used‼️
 
 ## 🚀 Live Demo
 
 The website is live at [https://your-website-url.com](http://shineportfolio.unaux.com/)
+
+## 📞 Contact
+
+Feel free to reach out to me at:
+- Email: [shineleo19@example.com]
+- LinkedIn: [https://www.linkedin.com/in/shine-leo-854a83326]
+- Personal Website: [your-website-url.com](http://shineportfolio.unaux.com)
+
+---
+
+⭐️ From [your GitHub username](https://github.com/yourusername)
