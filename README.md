@@ -1,18 +1,18 @@
 # My Personal Portfolio Website
 
-Welcome to the repository for my personal portfolio website. This site showcases my skills, projects, and professional experience as a [your profession/title].
+Welcome to the repository for my personal portfolio website. This site showcases my skills, projects, and professional experience as a engineering student.
 
 ## 📋 Overview
 
-This portfolio website serves as a digital resume and project showcase, built with [technologies you used, e.g., "HTML5, CSS3, and JavaScript" or "React and Node.js"].
+This portfolio website serves as a digital resume and project showcase, built with "HTML5", "CSS3" and "JavaScript" ‼️
 
 ## ✨ Features
 
 - Responsive design that works on desktop, tablet, and mobile devices
 - Interactive UI elements to enhance user experience
-- Project showcase with detailed descriptions and live demos
+- Project showcase with detailed descriptions and source code
 - Contact form for potential employers or collaborators
-- [Any other unique features of your site]
+- It direct to my email address, linkedin profile, instagram profile.
 
 ## 🛠️ Technologies Used
 
@@ -34,4 +34,4 @@ Feel free to reach out to me at:
 
 ---
 
-⭐️ From [your GitHub username](https://github.com/yourusername)
+⭐️ From [shineleo19](https://github.com/yourusername)
