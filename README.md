@@ -23,9 +23,4 @@ This portfolio website serves as a digital resume and project showcase, built wi
 
 ## 🚀 Live Demo
 
-The website is live at [your-website-url.com](https://your-website-url.com)
-
-## 📷 Screenshots
-
-![Portfolio Homepage](path/to/screenshot1.png)
-![Project Section](path/to/screenshot2.png)
+The website is live at [https://your-website-url.com](http://shineportfolio.unaux.com/)
