@@ -23,14 +23,14 @@ This portfolio website serves as a digital resume and project showcase, built wi
 
 ## 🚀 Live Demo
 
-The website is live at https://shineportfolio.unaux.com(http://shineportfolio.unaux.com/)
+The website is live at [https://shineportfolio.unaux.com](http://shineportfolio.unaux.com/)
 
 ## 📞 Contact
 
 Feel free to reach out to me at:
 - Email: shineleo19@example.com
 - LinkedIn: https://www.linkedin.com/in/shine-leo-854a83326
-- Personal Website: shineportfolio.unaux.com(http://shineportfolio.unaux.com)
+- Personal Website: ]shineportfolio.unaux.com].(http://shineportfolio.unaux.com)
 
 ---
 
