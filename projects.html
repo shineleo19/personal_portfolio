@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Leo's projects</title>
+    <link rel="stylesheet" href="projects.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <a href="#" class="logo">Shine Leo</a>
+        <div class="nav-menu">
+            <a href="#" class="nav-link">Home</a>
+            <a href="portfolio.html" class="nav-link ">Portfolio</a>
+            <a href="#projects" class="nav-link active">Projects</a>
+            <a href="contact.html" class="nav-link">Contact</a>
+            <a href="#" class="cta-button">Hire Me</a>
+        </div>
+        <button class="nav-toggle">
+            <i class="fas fa-bars"></i>
+        </button>
+    </nav>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio container">
+        <h1 class="portfolio-title" id="projects">My Creative Projects</h1>
+        <div class="portfolio-grid" id="portfolioGrid">
+            <!-- Portfolio items will be dynamically added here -->
+        </div>
+    </section>
+
+    <!-- Modal for Project Details -->
+    <div id="projectModal" class="modal">
+        <span class="close-modal">&times;</span>
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="Project Details">
+            <div id="modalDetails"></div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.querySelector('.nav-toggle');
+        const navMenu = document.querySelector('.nav-menu');
+        
+        navToggle.addEventListener('click', () => {
+            navMenu.classList.toggle('active');
+        });
+
+        document.addEventListener('DOMContentLoaded', () => {
+            const portfolioGrid = document.getElementById('portfolioGrid');
+            const projectModal = document.getElementById('projectModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalDetails = document.getElementById('modalDetails');
+            const closeModal = document.querySelector('.close-modal');
+
+            // Portfolio items data
+            const portfolioItems = [
+                {
+                    title: "Brand Identity Design",
+                    description: "Creative branding concept for a tech startup",
+                    image: "image/branding.jpg",
+                    fullDetails:
+                    `
+                        <div style="color: var(--white); padding: 20px; text-align: center;">
+                            <h2 style="margin-bottom: 15px;">Brand Identity Design</h2>
+                            <p>A comprehensive branding solution that captures the essence of a modern tech startup. The design focuses on clean, minimalist aesthetics with a bold color palette.</p>
+                            <a href="#" class="project-link" style="color:#50ff28; text-decoration:none;"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    `
+                },
+                {
+                    title: "Web Design Project",
+                    description: "Responsive website design for a creative agency",
+                    image: "image/web design.jpg",
+                    fullDetails: 
+                    `
+                        <div style="color: var(--white); padding: 20px; text-align: center;">
+                            <h2 style="margin-bottom: 15px;">Web Design Project</h2>
+                            <p>An innovative web design that showcases the client's creative capabilities through a modern, interactive interface. Fully responsive and user-centric approach.</p>
+                            <a href="#" class="project-link" style="color:#50ff28; text-decoration:none;"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    `
+                },
+                {
+                    title: "Product Design Concept",
+                    description: "Innovative product interface and packaging design",
+                    image: "image/object-oriented.jpg",
+                    fullDetails: 
+                    `
+                        <div style="color: var(--white); padding: 20px; text-align: center;">
+                            <h2 style="margin-bottom: 15px;">Product Design Concept</h2>
+                            <p>A cutting-edge product design that blends functionality with aesthetic appeal. Focused on user experience and modern design principles.</p>
+                            <a href="#" class="project-link" style="color:#50ff28; text-decoration:none;"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    `
+                },
+                
+                {
+                    title: "UI/UX Design",
+                    description: "Mobile application interface design",
+                    image: "image/ui-ux.jpg",
+                    fullDetails: 
+                    `
+                        <div style="color: var(--white); padding: 20px; text-align: center;">
+                            <h2 style="margin-bottom: 15px;">UI/UX Design</h2>
+                            <p>An intuitive and visually appealing mobile application interface that prioritizes user experience and seamless navigation.</p>
+                            <a href="#" class="project-link" style="color:#50ff28; text-decoration:none;"><i class="fab fa-github"></i> Source Code</a>
+                        </div>
+                    `
+                },
+               
+            ];
+
+            // Render portfolio items
+            portfolioItems.forEach((item, index) => {
+                const portfolioItem = document.createElement('div');
+                portfolioItem.classList.add('portfolio-item');
+                portfolioItem.innerHTML = `
+                    <img src="${item.image}" alt="${item.title}">
+                    <div class="portfolio-item-content">
+                        <h3 class="portfolio-item-title">${item.title}</h3>
+                        <p class="portfolio-item-description">${item.description}</p>
+                    </div>
+                `;
+                
+                // Add click event to open modal
+                portfolioItem.addEventListener('click', () => {
+                    modalImage.src = item.image;
+                    modalDetails.innerHTML = item.fullDetails;
+                    projectModal.style.display = 'block';
+                });
+
+                portfolioGrid.appendChild(portfolioItem);
+            });
+
+            // Close modal functionality
+            closeModal.addEventListener('click', () => {
+                projectModal.style.display = 'none';
+            });
+
+            // Close modal when clicking outside
+            window.addEventListener('click', (event) => {
+                if (event.target === projectModal) {
+                    projectModal.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shine Leo - Portfolio</title>
+    <link rel="stylesheet" href="frontpage.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container navbar-content">
+            <a href="#" class="logo">Shine Leo</a>
+            <button class="cta-button" ><a href="contact.html" style="text-decoration: none; color: black;">Let's Talk</a></button>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="hero-background"></div>
+        <div class="container hero-content">
+            <h1 class="hero-title">Elevating Brands with Design Brilliance</h1>
+            <p class="hero-subtitle">Creative designer transforming ideas into stunning visual experiences</p>
+            <div class="hero-buttons">
+                <a href="portfolio.html" class="hero-button hero-button-primary" >View Portfolio</a>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        // Interactive JavaScript
+        document.addEventListener('DOMContentLoaded', () => {
+            // Navbar scroll effect
+            const navbar = document.querySelector('.navbar');
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 50) {
+                    navbar.style.backgroundColor = 'rgba(0,0,0,0.9)';
+                } else {
+                    navbar.style.backgroundColor = 'rgba(0,0,0,0.8)';
+                }
+            });
+
+            // Button hover effects
+            const buttons = document.querySelectorAll('.cta-button, .hero-button');
+            buttons.forEach(button => {
+                button.addEventListener('mouseenter', (e) => {
+                    e.target.style.animation = 'pulse 0.5s';
+                });
+                button.addEventListener('mouseleave', (e) => {
+                    e.target.style.animation = 'none';
+                });
+            });
+
+            // No additional background interactions
+        });
+    </script>
+</body>
+</html>
